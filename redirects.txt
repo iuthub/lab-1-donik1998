@@ -1,0 +1,53 @@
+10:29:28.843000 == Info: Rebuilt URL to: www.facebook.com/
+10:29:28.859000 == Info:   Trying 31.13.81.36...
+10:29:28.859000 == Info: TCP_NODELAY set
+10:29:28.875000 == Info: Connected to www.facebook.com (31.13.81.36) port 80 (#0)
+10:29:28.875000 => Send header, 80 bytes (0x50)
+0000: GET / HTTP/1.1
+0010: Host: www.facebook.com
+0028: User-Agent: curl/7.55.1
+0041: Accept: */*
+004e: 
+10:29:29.046000 <= Recv header, 20 bytes (0x14)
+0000: HTTP/1.1 302 Found
+10:29:29.046000 <= Recv header, 37 bytes (0x25)
+0000: Location: https://www.facebook.com/
+10:29:29.046000 <= Recv header, 42 bytes (0x2a)
+0000: Content-Type: text/html; charset="utf-8"
+10:29:29.046000 <= Recv header, 102 bytes (0x66)
+0000: X-FB-Debug: atKVqCACtZmpWiKHJd/ln2wSUaFQTwwikvtOLIUcc6BW1rfMKPwV
+0040: tH4QGr7qauC6BTEzKVbr+/bhZza7/h2d4w==
+10:29:29.046000 <= Recv header, 32 bytes (0x20)
+0000: Alt-Svc: h3-24=":443"; ma=3600
+10:29:29.046000 <= Recv header, 37 bytes (0x25)
+0000: Date: Mon, 03 Feb 2020 05:29:22 GMT
+10:29:29.046000 <= Recv header, 24 bytes (0x18)
+0000: Connection: keep-alive
+10:29:29.046000 <= Recv header, 19 bytes (0x13)
+0000: Content-Length: 0
+10:29:29.046000 <= Recv header, 2 bytes (0x2)
+0000: 
+10:29:29.046000 == Info: Connection #0 to host www.facebook.com left intact
+10:29:29.046000 == Info: Issue another request to this URL: 'https://www.facebook.com/'
+10:29:29.046000 == Info:   Trying 31.13.81.36...
+10:29:29.046000 == Info: TCP_NODELAY set
+10:29:29.062000 == Info: Connected to www.facebook.com (31.13.81.36) port 443 (#1)
+10:29:29.062000 == Info: schannel: SSL/TLS connection with www.facebook.com port 443 (step 1/3)
+10:29:29.062000 == Info: schannel: checking server certificate revocation
+10:29:29.093000 == Info: schannel: sending initial handshake data: sending 181 bytes...
+10:29:29.093000 == Info: schannel: sent initial handshake data: sent 181 bytes
+10:29:29.093000 == Info: schannel: SSL/TLS connection with www.facebook.com port 443 (step 2/3)
+10:29:29.093000 == Info: schannel: failed to receive handshake, need more data
+10:29:29.187000 == Info: schannel: SSL/TLS connection with www.facebook.com port 443 (step 2/3)
+10:29:29.187000 == Info: schannel: encrypted data got 1388
+10:29:29.187000 == Info: schannel: encrypted data buffer: offset 1388 length 4096
+10:29:29.187000 == Info: schannel: encrypted data length: 1314
+10:29:29.187000 == Info: schannel: encrypted data buffer: offset 1314 length 4096
+10:29:29.187000 == Info: schannel: received incomplete message, need more data
+10:29:29.187000 == Info: schannel: SSL/TLS connection with www.facebook.com port 443 (step 2/3)
+10:29:29.187000 == Info: schannel: encrypted data got 1666
+10:29:29.187000 == Info: schannel: encrypted data buffer: offset 2980 length 4096
+10:29:29.375000 == Info: schannel: next InitializeSecurityContext failed: Unknown error (0x80092013) - The revocation function was unable to check revocation because the revocation server was offline.
+10:29:29.375000 == Info: Closing connection 1
+10:29:29.375000 == Info: schannel: shutting down SSL/TLS connection with www.facebook.com port 443
+10:29:29.375000 == Info: schannel: clear security context handle
